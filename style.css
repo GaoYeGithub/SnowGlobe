@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0b0b0b;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#snowglobe {
+  width: 85vmin;
+  height: 85vmin;
+
+  background: url('/beautiful-enchanted-cherry-blossom-forest.jpg') center/cover;
+
+  border-radius: 100%;
+
+  overflow: hidden;
+
+  margin: auto;
+
+  box-shadow: 0px 0px 20px 35px #FFFFFF05;
+}
+
+#particles {
+  height: 75%;
+  width: 100%;
+}
+
+#ground {
+  height: 25%;
+  width: 100%;
+  background: #bebebe;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(-15deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+.shake {
+  animation: shake 1s;
+}
+
+p {
+  color: #3e3e3e;
+  padding-bottom: 10px;
+  font-family: sans-serif;
+}
